@@ -1,0 +1,252 @@
+:root {
+    --scolor: #92DEED;
+    --dcolor: #242741;
+}
+
+.bg-s {
+    background: var(--scolor);
+}
+
+.bg-darkb {
+    background: var(--dcolor);
+}
+
+.mycontainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.border-s {
+    border: 1px solid var(--scolor);
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+}
+
+.text-s {
+    color: var(--scolor);
+}
+
+.text-op {
+    color: #8B8D9A;
+}
+
+.text-op:hover {
+    color: #fff;
+}
+
+.text-op.active-color {
+    color: var(--scolor);
+}
+
+.focus-none {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.fw-md {
+    font-weight: 500;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.bg-hero {
+    background: linear-gradient(#71738b 40%, #2d2f3c);
+}
+
+.game-hero:before {
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 100%;
+    background-image: url("../img/game47.png");
+    background-repeat: no-repeat;
+    right: 0;
+    border-top-left-radius: 90px;
+    background-position: center;
+}
+
+.blog-hero:before {
+    position: absolute;
+    content: '';
+    width: 27%;
+    height: 100%;
+    background-image: url("../img/cars.png");
+    background-repeat: no-repeat;
+    right: 0;
+    border-top-left-radius: 60%;
+    background-position: 40%;
+    background-size: cover
+}
+
+.bg-dark2 {
+    background: #292C46;
+}
+
+.contact-img {
+    border-radius: 90px 0 0 0;
+}
+
+.contact-border {
+    border-radius: 0 0 0 100px;
+}
+
+.contactform-border {
+    border-radius: 80px 0 80px 0;
+}
+
+/* -----model----- */
+.custom-model {
+    position: absolute;
+    top: 0;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center
+}
+
+.login-img img {
+    border-radius: 0 100px 0 100px;
+    height: 90vh !important;
+    object-position: left;
+}
+
+.custom-model-inner {
+    height: 90vh;
+    border-radius: 0 100px 0 100px;
+}
+
+.login-right {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh !important
+}
+
+.login-right::-webkit-scrollbar {
+    width: 0px;
+}
+
+.close-icon {
+    position: absolute;
+    right: 9%;
+    top: 25px;
+    cursor: pointer
+}
+
+body.active {
+    position: fixed;
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-sign {
+    background: #CED8CA;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.mockup-bg {
+    background: #EEF1F2;
+    border-radius: 0 0 50px 50px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.powered-by {
+    border-radius: 50px 0 50px 0;
+    background: #E7EAEB
+}
+
+.bg-pink {
+    background-color: #f8f8f9;
+}
+
+.login-img img {
+    border-radius: 0 100px 0 100px;
+}
+
+.login-img .bg-white {
+    border-radius: 0 100px 0 100px;
+}
+.rev-icon {
+    max-width: 100px;
+}
+@media screen and (max-width: 990px) {
+
+    .game-hero:before,
+    .blog-hero:before {
+        width: 33%;
+    }
+
+    .contact-border {
+        border-radius: 40px;
+    }
+
+    .contactform-border {
+        border-radius: 40px;
+    }
+
+    .contact-img {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .game-hero:before,
+    .blog-hero:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .mycontainer {
+        padding: 0 20px;
+    }
+
+    .contact-border {
+        border-radius: 30px;
+    }
+
+    .contact-img {
+        border-radius: 20px;
+    }
+
+    .contactform-border {
+        border-radius: 30px 0 30px 0;
+    }
+
+    .custom-model-inner {
+        border-radius: 0 60px 0 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-model-inner {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .lists-open {
+        display: block !important;
+    }
+}

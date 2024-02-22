@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+.space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+}
+
+.skygrd {
+    background: linear-gradient(90deg, rgba(146, 222, 237, 1) 5%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ----------------------- Admin Start -----------------------  */
+.panel {
+    width: 100%;
+    height: 100dvh;
+}
+
+.panel-left {
+    width: 250px;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.logo p {
+    background: linear-gradient(360deg, rgba(18, 22, 49, 1) 30%, rgba(54, 65, 90, 0.7959558823529411) 100%);
+    color: #fff;
+    padding: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.panel-right {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.right-top {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.right-top .fa-bars {
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.right-bottom {
+    height: calc(100dvh - 209px);
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right-bottom1 {
+    height: calc(100dvh - 250px);
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bottom-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.close-side {
+    right: 16px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.sdw {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.list {
+    height: calc(100dvh - 180px);
+    overflow-y: auto;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0px;
+    margin: 15px;
+}
+
+.list ul li a {
+    color: #121631;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.lgout {
+    color: #121631;
+}
+
+.list ul li a.active {
+    background: linear-gradient(360deg, rgba(18, 22, 49, 1) 40%, rgba(54, 65, 90, 0.8) 100%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.tbl {
+    min-width: 700px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tbl1 {
+    border: #F2F2F2 solid 2px;
+    padding: 0 !important;
+    border-radius: 15px;
+}
+
+.tbl1 tr:last-child td {
+    border: none !important;
+    outline: none !important;
+}
+
+.tbl1 tr {
+    vertical-align: middle;
+    ;
+}
+
+.tbl th {
+    color: #fff;
+    background: linear-gradient(360deg, rgba(18, 22, 49, 1) 40%, rgba(54, 65, 90, 0.8) 100%);
+}
+
+.gameimg {
+    width: 100px;
+    height: 70px;
+}
+
+.change-profile {
+    width: 90px;
+    border: 3px solid var(--orng);
+    border-radius: 50%;
+    position: relative
+}
+
+.camera {
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(to top, rgba(138, 138, 138, 0.7) 50%, transparent 50%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: translatex(-50%);
+    border-radius: 50%;
+    padding-top: 30px;
+}
+
+.change-profile1 {
+    width: 200px;
+    border: 3px solid var(--orng);
+    border-radius: 50%;
+    position: relative
+}
+
+.camera1 {
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.7) 50%, transparent 50%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: translatex(-50%);
+    border-radius: 18px;
+    padding-top: 30px;
+}
+
+.panel-right input:focus {
+    box-shadow: none !important;
+    border: solid 1px #cdcdcd !important;
+}
+
+.panel-right textarea:focus {
+    box-shadow: none !important;
+    border: solid 1px #cdcdcd !important;
+}
+
+.vdosec {
+    width: 500px;
+}
+
+.previewed {
+    width: 500px
+}
+
+.fa-plus {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: #fff;
+    border: dashed #fff 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+
+/* ----------------------- Admin End -----------------------  */
+
+.gradient {
+    background: linear-gradient(360deg, rgba(18, 22, 49, 1) 40%, rgba(54, 65, 90, 0.8) 100%);
+}
+
+.blue {
+    background-color: #292C46;
+}
+
+.sky {
+    background-color: #92DEED;
+}
+
+.darkblue {
+    background-color: #242741;
+}
+
+.lightblue {
+    background-color: #36415A;
+}
+
+.skyborder {
+    border: #92DEED solid 1px;
+    border-radius: 20px;
+}
+
+.navy {
+    background-color: #121631;
+}
+
+.milky {
+    background-color: #6F7183;
+}
+
+.skyclr {
+    color: #92DEED;
+}
+
+input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.borderbtm {
+    border-bottom: solid 2px #555353;
+}
+
+.bordertb {
+    border-top: solid 2px #555353;
+    border-bottom: solid 2px #555353;
+}
+
+.fa-star {
+    color: #F2BF14;
+}
+
+.rvimg {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 20px;
+}
+
+.user1 {
+    width: 70px;
+}
+
+.recommend {
+    height: calc(100% - 165px)
+}
+
+.recommend img {
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 195px;
+}
+
+.feeds img {
+    width: 100%;
+    max-width: 180px;
+    height: 100%;
+    max-height: 155px;
+}
+
+.lists ul {
+    list-style: none;
+}
+
+.lists li {
+    margin-top: 10px;
+}
+
+.lists a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.brd {
+    border: solid white 2px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.mycontainer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+.lists-open {
+    display: none;
+}
+@media screen and (max-width:767px) {
+    .panel-left {
+        position: absolute;
+        background: #fff;
+        display: none;
+    }
+
+    .panel-right {
+        width: calc(100% - 0px);
+        margin-left: 0;
+    }
+
+    .mycontainer {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .panel-left {
+        display: flex !important;
+    }
+
+    .right-bottom-3 {
+        height: calc(100dvh - 290px);
+    }
+
+}
