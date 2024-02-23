@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 import Review from '../Components/Review';
+import TopGames from '../Components/TopGames';
+
 // ------imgs-------
 import game1 from "../img/game4 7.png";
 import game2 from "../img/game4 8.png";
@@ -9,17 +11,70 @@ import feed1 from "../img/Rectangle 20810.png";
 import feed2 from "../img/Rectangle 20811.png";
 import rvimg from "../img/20816.png";
 import cimg from "../img/Ellipse 1556.png";
+import topgame from "../img/game47.png";
+
 
 
 function Home() {
+    const reviewsData = [
+        {
+          name: "Alex Martin",
+          star: "4.40",
+          rimg: rvimg,
+          cimg: cimg,
+          des: "Commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+        },
+        {
+          name: "John Smith",
+          star: "4.30",
+          rimg: rvimg,
+          cimg: cimg,
+          des: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+        },
+        {
+          name: "Jennifer",
+          star: "4.00",
+          rimg: rvimg,
+          cimg: cimg,
+          des: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+        },
+        {
+            name: "Alex Smith",
+            star: "4.00",
+            rimg: rvimg,
+            cimg: cimg,
+            des: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+          }
+      ];
+
+      const topGamesData = [
+        {
+          gamename: "Alex Martin",
+          star: "4.40",
+          gameimg: topgame,
+          des: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document"
+        },
+        {
+          gamename: "John Smith",
+          star: "4.60",
+          gameimg: topgame,
+          des: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document"
+        },
+        {
+          gamename: "Alex Martin",
+          star: "4.40",
+          gameimg: topgame,
+          des: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document"
+        }
+      ];
   return (
     <div>
          <section className="bg-hero">
             <div className="mycontainer">
                 <div className="row justify-content-center py-5">
                     <div className="col-lg-10">
-                        <h1 className="display-5 fw-md text-capitalize text-center text-white">Ultimate games reviews
-                            <span>platform.</span>
+                        <h1 className="display-5 fw-md text-capitalize text-center text-white">Ultimate games reviews 
+                            <span> platform.</span>
                         </h1>
                     </div>
                     <div className="col-lg-5">
@@ -178,8 +233,18 @@ function Home() {
             <div className="mycontainer catg py-5">
                 <h2 className="text-white text-center fs-1">Popular Reviews</h2>
                 <div className="row">
-                     <Review data={{name:"Alex Martin",star:"4.30",rimg:rvimg,cimg:cimg,des:"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."}}/>
-                     <Review data={{name:"Alex Martin",star:"4.00",rimg:rvimg,cimg:cimg,des:"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."}}/>
+                    {reviewsData.map((review, index) => (
+                        <Review key={index} data={review} />
+                    ))}
+                </div>
+            </div>
+            <div className="mycontainer py-5">
+                <h2 className="text-white fs-1">Top Games</h2>
+                <p className="text-white">Browse our created list of games.</p>
+                <div className="row">
+                    {topGamesData.map((game, index) => (
+                        <TopGames key={index} data={game} />
+                    ))}
                 </div>
             </div>
         </section>
