@@ -10,7 +10,6 @@ import logo from "../img/logo.png";
 import Profile from "../Pages/Profile";
 import MyModal from "../Components/MyModal";
 import profile from "../img/profile.png";
-import Footer from "../Components/Footer";
 
 function Layout() {
   return (
@@ -33,34 +32,34 @@ function Layout() {
             <div className="collapse navbar-collapse" id="mynavbar">
               <ul className="navbar-nav me-auto">
                 <li className="nav-item px-lg-2">
-                  <Link className="nav-link text-op active-color" to="/">
+                  <NavLink className="nav-link text-op " to="/">
                     {" "}
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item px-lg-2">
-                  <Link className="nav-link text-op" to="/games">
+                  <NavLink className="nav-link text-op" to="/games">
                     {" "}
                     Games
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item px-lg-2">
-                  <Link className="nav-link text-op" to="/blogs">
+                  <NavLink className="nav-link text-op" to="/blogs">
                     {" "}
                     Blogs
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item px-lg-2">
-                  <Link className="nav-link text-op" to="/contact">
+                  <NavLink className="nav-link text-op" to="/contact">
                     Contact Us
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
               <div className="d-flex align-items-center mt-3 mt-sm-0">
                 <MyModal />
-                <Link className="nav-link text-op" to="/profile">
+                <NavLink className="nav-link text-op" to="/profile">
                   <img src={profile} className="profile" alt="Example" />
-                </Link>
+                </NavLink>
               </div>
             </div>
           </div>

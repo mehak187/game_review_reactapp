@@ -372,6 +372,15 @@ input:focus {
     border: transparent !important;
     color: #000 !important;
 }
+.navbar-expand-sm .navbar-nav .nav-link:active {
+    color:var(--scolor) !important;
+}
+.navbar-expand-sm .navbar-nav .nav-link:focus {
+    color:#8B8D9A !important;
+}
+.navbar-expand-sm .navbar-nav .nav-link.active {
+    color:var(--scolor) !important;
+}
 @media screen and (max-width:767px) {
     .panel-left {
         position: absolute;
