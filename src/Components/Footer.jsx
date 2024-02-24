@@ -38,8 +38,8 @@ function Footer() {
                             <h2 className="fs-5 pb-2">
                                 Pages
                             </h2>
-                            <a href="games.html" className="d-block my-2 text-light text-decoration-none">Categories</a>
-                            <a href="blogs.html" className="d-block my-2 text-light text-decoration-none">Blogs</a>
+                            <a href="/games" className="d-block my-2 text-light text-decoration-none">Categories</a>
+                            <a href="/blogs" className="d-block my-2 text-light text-decoration-none">Blogs</a>
                         </div>
                     </div>
                     <div className="col-sm-6 my-2 my-md-0 col-md-4 col-lg-3 ">

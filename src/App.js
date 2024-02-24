@@ -2,6 +2,8 @@ import React from "react";
 import "./index.css";
 import "./css/main.css";
 import "./css/main2.css";
+// import "./js/main.js";
+
 
 import {
   BrowserRouter as Router,
@@ -22,7 +24,7 @@ import Contact from "./Pages/Contact";
 import BlogDetails from "./Pages/BlogDetails";
 import ReviewGame from "./Pages/ReviewGame";
 import Profile from "./Pages/Profile";
-
+import MyModal from './Components/MyModal';
 
 
 
@@ -43,7 +45,9 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+      
     </div>
+    
   );
 }
 
@@ -52,9 +56,7 @@ const Header = () => (
      <div className="bg-s py-2"></div>
     <nav className="navbar navbar-expand-sm bg-darkb ">
         <div className="mycontainer py-2 d-flex flex-wrap justify-content-between">
-            <a className="navbar-brand me-xl-5 pe-xl-3" href="index.html">
-              <img src={logo} alt="Example" />
-            </a>
+            <Link className="navbar-brand me-xl-5 pe-xl-3" to="/"><img src={logo} alt="Example" /></Link>
             <button className="navbar-toggler text-white px-0 py-0 border-0 focus-none" type="button"
                 data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <i className="fa-solid fa-bars fs-3"></i>
@@ -65,18 +67,18 @@ const Header = () => (
                       <Link className="nav-link text-op active-color" to="/"> Home</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                      <Link className="nav-link text-op active-color" to="/games"> Games</Link>
+                      <Link className="nav-link text-op" to="/games"> Games</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                     <Link className="nav-link text-op active-color" to="/blogs"> Blogs</Link>
+                     <Link className="nav-link text-op" to="/blogs"> Blogs</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                     <Link className="nav-link text-op active-color" to="/contact">Contact Us</Link>
+                     <Link className="nav-link text-op" to="/contact">Contact Us</Link>
                     </li>
                 </ul>
                 <div className="d-flex align-items-center mt-3 mt-sm-0">
-                    <button className="bg-transparent px-3 py-2 rounded-3 border-s text-s me-3 login-btn">Login here</button>
-                    <Link className="nav-link text-op active-color" to="/profile">
+                    <MyModal />
+                    <Link className="nav-link text-op" to="/profile">
                       <img src={profile} className="profile" alt="Example" />
                     </Link>
                 </div>

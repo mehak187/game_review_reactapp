@@ -355,6 +355,23 @@ input:focus {
 .lists-open {
     display: none;
 }
+.modal-dialog {
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+.modal-content {
+    background: transparent !important;
+}
+.modal {
+    padding: 0 !important;
+}
+.vh-99 {
+    height: 99vh;
+}
+.sign-log button {
+    border: transparent !important;
+    color: #000 !important;
+}
 @media screen and (max-width:767px) {
     .panel-left {
         position: absolute;
