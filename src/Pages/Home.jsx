@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+// import "../js/main.js";
+
 
 import Review from '../Components/Review';
 import TopGames from '../Components/TopGames';
@@ -12,7 +14,6 @@ import feed2 from "../img/Rectangle 20811.png";
 import rvimg from "../img/20816.png";
 import cimg from "../img/Ellipse 1556.png";
 import topgame from "../img/game47.png";
-
 
 
 function Home() {

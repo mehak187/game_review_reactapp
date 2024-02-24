@@ -12,26 +12,38 @@ import {
   Outlet,
   BrowserRouter,
 } from "react-router-dom";
-import Home from "./Pages/Home";
-import Blogs from "./Pages/Blogs";
+
+import MyModal from './Components/MyModal';
+
 import logo from "./img/logo.png";
 import profile from "./img/profile.png";
-import Footer from "./Components/Footer";
+
+import Layout from "./Pages/Layout";
 import Games from "./Pages/Games";
 import Contact from "./Pages/Contact";
 import BlogDetails from "./Pages/BlogDetails";
 import ReviewGame from "./Pages/ReviewGame";
 import Profile from "./Pages/Profile";
+import Home from "./Pages/Home";
+import Blogs from "./Pages/Blogs";
 
-
-
+import AdminLayout from "./AdminPages/AdminLayout";
+import ManageBlogs from "./AdminPages/ManageBlogs";
+import AddBlogs from "./AdminPages/AddBlogs";
+import AddCompany from "./AdminPages/AddCompany";
+import AddGames from "./AdminPages/AddGames";
+import Dashboard from "./AdminPages/Dashboard";
+import ManageFooter from "./AdminPages/ManageFooter";
+import ManageGames from "./AdminPages/ManageGames";
+import ManageReviews from "./AdminPages/ManageReviews";
+import ManageCompanies from "./AdminPages/ManageCompanies";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route element={<Header />}>
+          <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/games" element={<Games />} />
@@ -40,10 +52,22 @@ function App() {
             <Route path="/reviewgame" element={<ReviewGame />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
+          <Route element={<AdminLayout />}>
+            <Route path="/addblogs" element={<AddBlogs />} />
+            <Route path="/addcompany" element={<AddCompany />} />
+            <Route path="/addgames" element={<AddGames />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/manageblogs" element={<ManageBlogs />} />
+            <Route path="/managefooter" element={<ManageFooter />} />
+            <Route path="/managegames" element={<ManageGames />} />
+            <Route path="/managereviews" element={<ManageReviews />} />
+            <Route path="/managecompanies" element={<ManageCompanies />} />
+          </Route>
         </Routes>
       </BrowserRouter>
-      <Footer />
+      
     </div>
+    
   );
 }
 
@@ -52,9 +76,7 @@ const Header = () => (
      <div className="bg-s py-2"></div>
     <nav className="navbar navbar-expand-sm bg-darkb ">
         <div className="mycontainer py-2 d-flex flex-wrap justify-content-between">
-            <a className="navbar-brand me-xl-5 pe-xl-3" href="index.html">
-              <img src={logo} alt="Example" />
-            </a>
+            <Link className="navbar-brand me-xl-5 pe-xl-3" to="/"><img src={logo} alt="Example" /></Link>
             <button className="navbar-toggler text-white px-0 py-0 border-0 focus-none" type="button"
                 data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <i className="fa-solid fa-bars fs-3"></i>
@@ -65,18 +87,18 @@ const Header = () => (
                       <Link className="nav-link text-op active-color" to="/"> Home</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                      <Link className="nav-link text-op active-color" to="/games"> Games</Link>
+                      <Link className="nav-link text-op" to="/games"> Games</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                     <Link className="nav-link text-op active-color" to="/blogs"> Blogs</Link>
+                     <Link className="nav-link text-op" to="/blogs"> Blogs</Link>
                     </li>
                     <li className="nav-item px-lg-2">
-                     <Link className="nav-link text-op active-color" to="/contact">Contact Us</Link>
+                     <Link className="nav-link text-op" to="/contact">Contact Us</Link>
                     </li>
                 </ul>
                 <div className="d-flex align-items-center mt-3 mt-sm-0">
-                    <button className="bg-transparent px-3 py-2 rounded-3 border-s text-s me-3 login-btn">Login here</button>
-                    <Link className="nav-link text-op active-color" to="/profile">
+                    <MyModal />
+                    <Link className="nav-link text-op" to="/profile">
                       <img src={profile} className="profile" alt="Example" />
                     </Link>
                 </div>

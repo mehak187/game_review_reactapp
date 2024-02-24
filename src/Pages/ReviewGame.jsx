@@ -6,9 +6,7 @@ import sidebiew from "../img/side-view-smiley-woman-playing-videogame 2.png";
 import TopGames from '../Components/TopGames';
 import rvimg from "../img/20816.png";
 import cimg from "../img/Ellipse 1556.png";
-
-
-
+import AddReview from '../Components/AddReview';
 
 function ReviewGame() {
     const topGamesData = [
@@ -233,9 +231,8 @@ function ReviewGame() {
                                     </div>
                                     <div className="d-flex align-items-center">
                                         <h4 className="text-white my-3 ">Rate this game</h4>
-                                        <button className="px-3 py-2 ms-3 rounded-4 bg-white border-0 ">Add a Review</button>
+                                        <AddReview />
                                     </div>
-
                                 </div>
                             </div>
                         </div>
