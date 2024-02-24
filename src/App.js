@@ -12,19 +12,31 @@ import {
   Outlet,
   BrowserRouter,
 } from "react-router-dom";
-import Home from "./Pages/Home";
-import Blogs from "./Pages/Blogs";
+
+import MyModal from './Components/MyModal';
+
 import logo from "./img/logo.png";
 import profile from "./img/profile.png";
+
+import Layout from "./Pages/Layout";
 import Games from "./Pages/Games";
 import Contact from "./Pages/Contact";
 import BlogDetails from "./Pages/BlogDetails";
 import ReviewGame from "./Pages/ReviewGame";
 import Profile from "./Pages/Profile";
-import MyModal from './Components/MyModal';
-import Layout from "./Pages/Layout";
+import Home from "./Pages/Home";
+import Blogs from "./Pages/Blogs";
 
-
+import AdminLayout from "./AdminPages/AdminLayout";
+import ManageBlogs from "./AdminPages/ManageBlogs";
+import AddBlogs from "./AdminPages/AddBlogs";
+import AddCompany from "./AdminPages/AddCompany";
+import AddGames from "./AdminPages/AddGames";
+import Dashboard from "./AdminPages/Dashboard";
+import ManageFooter from "./AdminPages/ManageFooter";
+import ManageGames from "./AdminPages/ManageGames";
+import ManageReviews from "./AdminPages/ManageReviews";
+import ManageCompanies from "./AdminPages/ManageCompanies";
 
 function App() {
   return (
@@ -39,6 +51,17 @@ function App() {
             <Route path="/blogdetails" element={<BlogDetails />} />
             <Route path="/reviewgame" element={<ReviewGame />} />
             <Route path="/profile" element={<Profile />} />
+          </Route>
+          <Route element={<AdminLayout />}>
+            <Route path="/addblogs" element={<AddBlogs />} />
+            <Route path="/addcompany" element={<AddCompany />} />
+            <Route path="/addgames" element={<AddGames />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/manageblogs" element={<ManageBlogs />} />
+            <Route path="/managefooter" element={<ManageFooter />} />
+            <Route path="/managegames" element={<ManageGames />} />
+            <Route path="/managereviews" element={<ManageReviews />} />
+            <Route path="/managecompanies" element={<ManageCompanies />} />
           </Route>
         </Routes>
       </BrowserRouter>

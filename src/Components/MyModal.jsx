@@ -21,7 +21,7 @@ function MyModal() {
         Login here
       </Button>
 
-      <Modal centered show={show} onHide={handleClose}>
+      <Modal className='logmodal' centered show={show} onHide={handleClose}>
       
       <div className="mycontainer d-flex align-items-center justify-content-center vh-99">
             <div className="col-lg-10 d-flex bg-pink custom-model-inner position-relative">

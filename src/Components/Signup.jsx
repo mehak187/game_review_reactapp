@@ -22,7 +22,7 @@ function Signup() {
      </div>
       <p className="mb-0 text-center mt-3"> </p>
 
-      <Modal centered show={show} onHide={handleClose}>
+      <Modal className='logmodal' centered show={show} onHide={handleClose}>
         <div className="mycontainer d-flex align-items-center justify-content-center vh-99">
         <div className="col-lg-10 d-flex  bg-pink custom-model-inner position-relative">
                 <div className="row box justify-content-center ">
