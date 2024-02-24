@@ -25,6 +25,7 @@ import BlogDetails from "./Pages/BlogDetails";
 import ReviewGame from "./Pages/ReviewGame";
 import Profile from "./Pages/Profile";
 import MyModal from './Components/MyModal';
+import Layout from "./Pages/Layout";
 
 
 
@@ -33,7 +34,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route element={<Header />}>
+          <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/games" element={<Games />} />
@@ -44,7 +45,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <Footer />
       
     </div>
     
