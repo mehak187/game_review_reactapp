@@ -69,7 +69,7 @@ function Layout() {
           <div className="mycontainer">
             <div className="py-5">
               <div className="d-flex justify-content-end pb-5 border-bottom border-1">
-                <button className="bg-primary border-0 rounded-3 py-2 px-4 fs-6 text-white">
+                <button className="sky border-0 rounded-3 py-2 px-4 fs-6 text-black">
                   Sign Up
                 </button>
               </div>
@@ -115,7 +115,7 @@ function Layout() {
                           placeholder="Subscribe"
                           className="border-0 text-primary w-100 py-2"
                         />
-                        <i className="fas fa-paper-plane text-primary fs-5 ms-2"></i>
+                        <i className="fas fa-paper-plane skyclr fs-5 ms-2"></i>
                       </div>
                     </form>
                     <Link
