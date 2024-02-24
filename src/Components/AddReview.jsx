@@ -47,7 +47,7 @@ function AddReview() {
               <input
                 type="submit"
                 value="Add"
-                className="rounded-pill main-bg text-white border-0 px-5 py-2"
+                className="rounded-pill sky text-black border-0 px-5 py-2"
               />
             </div>
           </form>

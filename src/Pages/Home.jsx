@@ -90,7 +90,7 @@ function Home() {
         </section>
         <section className="darkblue ">
             <div className="mycontainer catg py-5">
-                <div className="row justify-content-between">
+                <div className="row flex-column-reverse flex-sm-row justify-content-between">
                     <div className="col-12 col-sm-5 my-3 col-lg-3 p-md-0">
                         <div className="blue d-flex flex-column h-100">
                             <div className="sky py-3 px-2 d-flex align-items-center">
@@ -231,7 +231,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="mycontainer catg py-5">
+            <div className="mycontainer catg py-0">
                 <h2 className="text-white text-center fs-1">Popular Reviews</h2>
                 <div className="row">
                     {reviewsData.map((review, index) => (

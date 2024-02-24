@@ -56,8 +56,8 @@ body {
 }
 
 .panel-right {
-    width: calc(100% - 250px);
-    margin-left: 250px;
+    width: calc(100% - 0px);
+    margin-left: 0;
 }
 
 .right-top {
@@ -418,11 +418,14 @@ input:focus {
 .main-bg {
     background-color: #11112B;
 }
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop  {
+    background: none !important;
+}
 @media screen and (max-width:767px) {
     .panel-left {
-        position: absolute;
+        /* position: absolute; */
         background: #fff;
-        display: none;
+        /* display: none; */
     }
 
     .panel-right {
@@ -443,5 +446,7 @@ input:focus {
     .right-bottom-3 {
         height: calc(100dvh - 290px);
     }
-
+    .panel-left {
+        background: #fff;
+    }
 }

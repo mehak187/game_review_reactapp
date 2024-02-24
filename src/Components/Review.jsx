@@ -3,8 +3,8 @@ import React from "react";
 function Review({data}) {
   return (
     <div className="col-lg-6 mt-3">
-      <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between skyborder">
-        <img src={data.rimg} alt="game" className="rvimg h-100 mt-3 mt-sm-0" />
+      <div className="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between skyborder">
+        <img src={data.rimg} alt="game" className="rvimg h-100 mt-3 px-3 mt-sm-0" />
         <div className="p-3">
           <div className="d-flex justify-content-between align-items-end flex-wrap">
             <div className="d-flex align-items-center">
@@ -23,7 +23,7 @@ function Review({data}) {
             <p className="mb-0 fs-5 my-2 text-white">{data.star}/5.00</p>
           </div>
           <div className="mt-2">
-            <p className="text-secondary mb-0 small">
+            <p className="text-col-lg-6 mt-3 text-secondary mb-0 small">
               {data.des}
             </p>
           </div>
